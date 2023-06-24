@@ -15,7 +15,7 @@ h1 {
   color: white;
   padding-bottom: 40px;
   text-align: center;
-  margin-top: -240px;
+  margin-top: -290px;
   margin-bottom: 40px;
   font-size: 50px;
   font-family: "Bagel Fat One", cursive;
@@ -261,7 +261,7 @@ h1 {
   overflow: hidden;
   height: 100vh;
   animation: animate 4s linear infinite;
-  margin-top: -430px;
+  margin-top: -490px;
 }
 
 @keyframes animate {
