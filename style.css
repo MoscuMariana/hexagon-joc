@@ -6,14 +6,14 @@
 }
 
 body {
-  background: rgb(123, 158, 158);
+  background: rgb(38, 253, 49);
 }
 
 h1 {
   color: white;
   padding-bottom: 40px;
   text-align: center;
-  margin-top: -180px;
+  margin-top: -240px;
   margin-bottom: 40px;
 }
 
@@ -156,7 +156,7 @@ h1 {
   background: linear-gradient(
     to top,
     transparent,
-    rgba(0, 0, 0, 0.5),
+    rgba(73, 199, 42, 0.5),
     transparent
   );
 }
@@ -292,3 +292,5 @@ h1 {
   background: #0f0;
   cursor: alias;
 }
+
+/* Footer */
