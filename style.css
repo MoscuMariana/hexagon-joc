@@ -1,5 +1,6 @@
 /** @format */
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
 
 * {
   margin: 0;
@@ -16,6 +17,8 @@ h1 {
   text-align: center;
   margin-top: -240px;
   margin-bottom: 40px;
+  font-size: 50px;
+  font-family: "Bagel Fat One", cursive;
 }
 
 #hexGrid {
@@ -303,4 +306,13 @@ h1 {
   cursor: alias;
 }
 
-/* Nav */
+/* footer */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0f0;
+  color: white;
+  text-align: center;
+}
