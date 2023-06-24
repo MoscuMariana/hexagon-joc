@@ -4,8 +4,15 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background: rgb(123, 158, 158);
+}
+
+h1 {
+  color: white;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 #hexGrid {
@@ -21,7 +28,7 @@ body {
 .hex {
   position: relative;
   visibility: hidden;
-  outline: 1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  outline: 1px solid transparent;
   transition: all 0.5s;
   backface-visibility: hidden;
   will-change: transform;
@@ -62,7 +69,7 @@ body {
   transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
 }
 
-/*** HEX CONTENT **********************************************************************/
+/*** HEX continut **********************************************************************/
 .hex img {
   left: -100%;
   right: -100%;
@@ -231,4 +238,54 @@ body {
   #hexGrid {
     font-size: 8px;
   }
+}
+
+/* Efect hexagon cu efecte*/
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.row {
+  display: inline-flex;
+  margin-left: -50px;
+  margin-top: -32px;
+  overflow: hidden;
+}
+.row:nth-child(even) {
+  margin-left: 1px;
+}
+.hexagon {
+  position: relative;
+  height: 110px;
+  width: 100px;
+  background: #111;
+  margin: 1px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 2s;
+}
+.hexagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.02);
+}
+.hexagon:hover {
+  transition: 0s;
+  background: #0f0;
+  cursor: alias;
 }
