@@ -261,7 +261,6 @@ h1 {
   overflow: hidden;
   height: 100vh;
   animation: animate 4s linear infinite;
-  margin-top: -490px;
 }
 
 @keyframes animate {
@@ -315,4 +314,12 @@ h1 {
   background-color: #0f0;
   color: white;
   text-align: center;
+  margin-top: -630px;
+}
+
+.container1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
