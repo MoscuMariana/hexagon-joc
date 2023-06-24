@@ -13,6 +13,8 @@ h1 {
   color: white;
   padding-bottom: 40px;
   text-align: center;
+  margin-top: -180px;
+  margin-bottom: 40px;
 }
 
 #hexGrid {
@@ -23,6 +25,7 @@ h1 {
   overflow: hidden;
   font-family: sans-serif;
   list-style-type: none;
+  margin-top: -60px;
 }
 
 .hex {
@@ -269,7 +272,7 @@ h1 {
   position: relative;
   height: 110px;
   width: 100px;
-  background: #111;
+  background: #111111;
   margin: 1px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   transition: 2s;
