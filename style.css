@@ -1,14 +1,18 @@
 /** @format */
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+:root {
+  --background: rgb(38, 253, 49);
+  --background-container: #333;
+  --text: #fff;
+  --highlight: #39ac4c;
+}
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background: rgb(38, 253, 49);
 }
 
 h1 {
@@ -324,4 +328,88 @@ h1 {
   width: 100%;
   margin-top: -300px;
   margin-bottom: 50px;
+}
+
+.container3 {
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  overflow: hidden;
+  transition: 0.5s background ease;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.theme-switch {
+  --background: #fff;
+  --text: #333;
+  color: var(--text);
+  width: 70px;
+  height: 30px;
+  background: var(--highlight);
+  border-radius: 50px;
+  position: relative;
+}
+
+.switch {
+  background: white;
+  width: 24px;
+  height: 24px;
+  background: var(--background);
+  border-radius: 100%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.5s all ease;
+}
+
+.light-theme {
+  --background: #fff;
+  --text: #000;
+  background: var(--background);
+}
+
+.theme-switch {
+  background: var(--text);
+}
+
+.switch {
+  transform: translateX(37px);
+}
+
+a {
+  color: var(--text);
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+a {
+  margin: 10px 30px;
+  position: relative;
+  color: var(--text);
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+&:before {
+  position: absolute;
+  bottom: -2px;
+  content: "";
+  width: 100%;
 }
